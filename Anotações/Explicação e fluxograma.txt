@@ -1,0 +1,39 @@
+Fluxo:
+
+	1 -Captura :
+		*Detecção da face e redimencionamento
+	 
+	2 -Etração de fotos para Faces(pegar uma foto e retirar o rosto) - Extração e Treino
+		*Conhecer a face
+			*Criação de Embeddings
+				+ Explicação de Embeddings https://www.youtube.com/watch?v=9FmxpjwRQ0Q, 
+							https://cloud.google.com/architecture/overview-extracting-and-serving-feature-embeddings-for-machine-learning?hl=pt-br#introduction
+				
+					+O QUE EU ENTENDI: Embeddings tem varios tipos, tem de imagens, de texto, em palavrasele busca algo que foi vinculado com aquela palavra. Exemplo: A palavra Brasil pode estar vinculada a São Paulo, ao nome do Presidente...
+							E assim sao nas imagens com   Embeddings,sao um conjunto de de detalhes no caso da imagem que estao ligados aquela face,
+							Tipo o detalhe da minha sombrancelha esta vinculado com meu rosto.Formato do olho, distancia entre o olho e a boca. Com isso eu gero um vetor diferente, ou seja gero um vetor de codigos diferente para cada rosto
+							O Embeddings gera um vetor de 128 posições para cada rosto
+								Exemplo o meu: 
+									1º (0.112) 
+								           	2º (0.067)
+								           	3º (0.091)
+								           	4º (0.129)
+								           	5º (0.002)
+								           	6º (0.175)
+								           	e assim vai.....
+								           	128º (0.023)
+	Sugestão: Usar o orange para o fluxograma e entender o processo do projeto.Com o orange instaçado.... instalar o images analytics:
+			options > add-ons > images analytics
+		 
+
+
+				*Deepface/OpenFace/FaceNet
+
+
+	3 - Comparação:
+		*Nova face écomparada com a base de imagens
+
+			*Com a comparação eu tenho o reconhecimento
+
+			3.1 - Reconhecimento
+

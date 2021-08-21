@@ -1,0 +1,26 @@
+Episodio 2 
+
+CRIANDO ABASE DE FACES
+
+	EMBEDDINGS : é um vetor com 128 posições, com esses numeros eu treino meu algoritmo para identificar cada fase
+	
+
+BIBLIOTECA QUE RECONHECE FACE:
+	
+	MTCNN
+
+	from mtcnn import mtcc
+		
+	
+
+BIBLIOTECA PARA MANIPULAR IMAGENS
+
+	pil
+
+	from PIL import Image
+
+BIBLIOTECA PARA LISTAR O DIRETORIO:
+	os
+
+	from os import listdir
+

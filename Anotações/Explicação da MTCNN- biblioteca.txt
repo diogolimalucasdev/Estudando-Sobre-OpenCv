@@ -1,0 +1,37 @@
+MTCNN - BIBLIOTECA EXPLICAÇÂO
+
+detecção de tosto com DEEP LEARNING (pesquisar o que é DEEP LEARNING)
+
+	- pontos de referencia:
+		olhos, boca e nariz
+
+	-A rede usa uma estrutura em cascada com tres redes:
+		1 -imagem é redimensionada em tamanhos diferentes(chamada imagem pirâmide)
+		2- O primeiro modelo(P-Net Propsal Network) propôe regiões faciais candidatas;
+		3- O segundo modelo(r_net refine network) filtra as caixas deimitadoras
+		4-E o terceiro modelo(O-Net output Network) propõe pontos de referência facias
+
+
+SOBRE A BIBLIOTECA: 			
+
+	TEM ISSO NO  GITHUB{
+
+		-Para instalar:
+			pip install mtcnn
+				depois
+			pip install tensorflow
+			
+			agora opcional
+			conda install tensorflow
+
+
+		No PYcharm
+
+		from mtcnn import MTCNN
+		
+		import cv2              #essa biblioteca ...serve para abrir a imagem
+		
+		}
+		
+	Box: é a sub-imagem de onde estaa a face
+		
